@@ -43,7 +43,7 @@ CrossHair explores different paths through your function.
 These special CrossHair objects hold one or more Z3 expressions which are used
 in the Z3 solver. Here are some examples:
 
-| When your function takes a parameter with this python type, | we supply an object of this CrossHair type, | which holds an expression with this Z3 sort. |
+| When your function takes a parameter with this python type, | we supply an object of this CrossHair type, | which holds an expression with this Z3 sort: |
 |-|-|-|
 | `int` | `SmtInt` | `IntSort()` |
 | `bool` | `SmtBool` | `BoolSort()` |
@@ -148,4 +148,6 @@ know which ones interest you the most!
 * Dealing with potentially aliased mutable values (x is y).
 * Creating symbolics for your custom classes.
 * Reconciling error behavior (ValueErrors, TypeErrors).
+* Implicitly converting types accurately.
 * Managing evaluation order. (under-approximation and over-approximation tactics)
+* Creating symbolics for base classes, or even for `object`.
