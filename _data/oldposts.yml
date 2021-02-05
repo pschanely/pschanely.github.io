@@ -1,0 +1,15 @@
+- title: "(Failing to) model python regular expressions with Z3"
+  excerpt: "As of the last week or so, CrossHair can check properties of Python programs using regular expressions. Below, I ramble about my adventure in making this work."
+  url: https://medium.com/@pschanely/modeling-python-regular-expressions-with-z3-fe391b7ee24
+- title: "Introducing EmojiTactics"
+  excerpt: "I’ve just finished the v0 of a simple turn-based strategy game, EmojiTactics."
+  url: https://medium.com/@pschanely/introducing-emojitactics-db480ace2eb3
+- title: "Computed State: The Model-View Problem"
+  excerpt: "From compilers to web apps, databases to caches, maintaining computed state is the most prevalent and thorny problem I’ve faced as a developer."
+  url: https://medium.com/hackernoon/computed-state-the-model-view-problem-9cbe8cf8486f
+- title: Sorts and Filters Suck
+  excerpt: The traditional search interface, with its array of filters, facets, and sorting options is ubiquitous. It also sucks.
+  url: https://medium.com/@pschanely/why-sorts-and-filters-suck-d94a00c49669
+- title: Optimizing Higher Order Functions with Hypothetical Inverses
+  excerpt: How do we make compilers smart enough to know that “sum(reverse(x))” can be rewritten to “sum(x)”?
+  url: https://medium.com/@pschanely/optimizing-higher-order-functions-with-hypothetical-inverses-e5153ab69753

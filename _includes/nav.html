@@ -1,0 +1,7 @@
+<header>
+  {% for item in site.data.nav %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}style="font-weight:bold;"{% endif %} role="button">
+      {{ item.name }}
+    </a>
+  {% endfor %}
+</header>

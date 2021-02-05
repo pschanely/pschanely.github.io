@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-nord.min.css">
+    {% feed_meta %}
+    {% seo %}
+  </head>
+  <body>
+    <div style="margin-left:1em; margin-right:1em;">
+      {{ content }}
+    </div>
+    <footer class="sticky">
+      <p style="text-align: center">
+	Phillip Schanely - 
+	<a href="https://twitter.com/pschanely">Twitter</a> -
+	<a href="https://github.com/pschanely">GitHub</a> -
+	pschanely [at] gmail
+      </p>
+    </footer>
+  </body>
+</html>
