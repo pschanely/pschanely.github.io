@@ -53,64 +53,65 @@ in the Z3 solver. Here are some examples:
 ## Let's Explore
 
 We can initialize a CrossHair object by giving it a name:
-```
+<pre>
 >>> crosshair_x = SmtInt('x')
-```
+</pre>
 We can access the `.var` attribute of any CrossHair object to get
 the Z3 variable(s) that it holds:
-```
+<pre>
 >>> crosshair_x.var
 x
 >>> type(crosshair_x.var)
 <class 'Z3.Z3.ArithRef'>
-```
+</pre>
 
 This takes the Z3 variable we just defined and adds one to it:
-```
+<pre>
 >>> expr = crosshair_x.var + Z3.IntVal(1)
 >>> expr
 x + 1
 >>> type(expr)
 <class 'Z3.Z3.ExprRef'>
-```
+</pre>
 
 We can create CrossHair objects not only for fresh variables, but
 also for Z3 expressions.
 So, if we wanted to wrap `x + 1` back into a CrossHair object,
 we'd write:
-```
+<pre>
 >>> SmtInt(crosshair_x.var + Z3.IntVal(1))
-```
+</pre>
 
 The `SmtInt` class defines the `__add__` method so that you don't
 have to spell that out, though. You can just say `crosshair_x + 1`, and
 `SmtInt` does the necessary unwrapping and re-wrapping:
 
-```
+<pre>
 >>> type(crosshair_x + 1)
 <class 'crosshair.libimpl.builtinslib.SmtInt'>
-```
+</pre>
 
 `SmtInt` also defines the comparison methods so that they return symbolic
 booleans:
 
-```
+<pre>
 >>> type(crosshair_x >= 0)
 <class 'crosshair.libimpl.builtinslib.SmtBool'>
-```
+</pre>
 
 The symbolic boolean holds an equivalent Z3 expression:
-```
+<pre>
 >>> (crosshair_x >= 0).var
 0 <= x
-```
+</pre>
 
 So far, everything is symbolic. But eventually, the Python interpreter
 needs a real value; consider:
-```
+<pre>
 >>> if crosshair_x > 0:
 >>>   print('bigger than zero')
-```
+</pre>
+
 Should this execute the print or not? When python executes the `if`
 statement, it calls `__bool__` on the `SmtBool` object. This method
 does something very special. It consults Z3:
@@ -121,9 +122,12 @@ does something very special. It consults Z3:
   Return the (concrete) bool that we decided.
 
 CrossHair will remember what decisions it has made so that
-it can make different decisions on future executions.
+it can make different decisions on future executions. Ultimately,
+we're looking for some target thing to happen: an exception to be
+raised, or a postcondition to return False. When that happens,
+we ask Z3 for a model and report it as a counterexample.
 
-And, that's the core of how CrossHair works.
+That's the core of how CrossHair works.
 
 
 ## Simple, right?
@@ -132,8 +136,8 @@ Well, if there is an accomplishment about CrossHair, it's that it
 tries hard to get the details right. And there are __a lot__ of
 details.
 
-Here are some of the topics I'm hoping to cover next. Let me know
-which ones interest you the most!
+Here are some of the topics I'm considering talking about next. Let me
+know which ones interest you the most!
 
 * Balancing the amount of work done inside and outside the solver.
 * Developing heuristics for effective path exploration.
