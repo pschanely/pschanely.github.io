@@ -1,5 +1,38 @@
 
 
+<pre>
+</pre>
+
+<pre>
+</pre>
+
+<pre>
+</pre>
+
+avg function
+
+grade_score function
+
+grade gist https://crosshair-web.org/?crosshair=0.1&python=3.8&gist=630d38da23d6c88d94446a914a5768ff
+
+def grade(score: float) -> str:
+    '''
+    pre: 0 <= score <= 100
+    post: len(_) == 1
+    post: implies(score < 60, _ == 'F')
+    post: implies(50 <= score < 90, chr(ord(_) + 1) == grade(score + 10))
+    '''
+    if score >= .9:
+        return 'A'
+    if score >= .8:
+        return 'B'
+    if score >= .7:
+        return 'C'
+    if score >= .6:
+        return 'D'
+    return 'F'
+
+
 ## o
 
 
