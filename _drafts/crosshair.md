@@ -1,7 +1,13 @@
 
 
-<pre>
-</pre>
+
+Immediate TODO:
+
+Graceful timeouts
+Enable/disable analysis directives
+:raises: parsing
+
+
 
 <pre>
 </pre>
@@ -9,10 +15,17 @@
 <pre>
 </pre>
 
-avg function
+<pre>
+</pre>
+
+
+avg function:
+* duplicate the list and get the same result.
+* Add a number, moves the average in the direcion of that number
+* averages of lists of equal length.
+
 
 grade_score function
-
 grade gist https://crosshair-web.org/?crosshair=0.1&python=3.8&gist=630d38da23d6c88d94446a914a5768ff
 
 def grade(score: float) -> str:
@@ -36,7 +49,7 @@ def grade(score: float) -> str:
 ## o
 
 
-* Logic implemented in C.
+
 * __Semantic differences__ between Python operations and their most similar
   Z3 operations are plentiful. For example, booleans *are*
   integers in Python; not so in Z3:
