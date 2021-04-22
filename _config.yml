@@ -4,3 +4,6 @@ plugins:
   - jekyll-seo-tag
 
 theme: jekyll-theme-midnight
+
+author:
+  twitter: pschanely
