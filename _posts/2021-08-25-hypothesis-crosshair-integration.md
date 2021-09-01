@@ -5,10 +5,9 @@ title:  "An early Hypothesis-CrossHair integration"
 ---
 
 **TLDR**: As of today,
-[CrossHair](https://github.com/pschanely/CrossHair)
-can check
-[Hypothesis](https://hypothesis.readthedocs.io)
-tests. (but it's bad at it right now!)
+[CrossHair
+can check](https://crosshair.readthedocs.io/en/latest/kinds_of_contracts.html#hypothesis-support)
+Hypothesis tests. (but it's bad at it right now!)
 
 **Preliminary Concepts:**
 
