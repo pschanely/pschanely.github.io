@@ -125,3 +125,6 @@ Zac
 about how this mid-level representation could be added to Hypothesis.
 If you're interested in helping to bring more effective symbolic reasoning to
 Hypothesis, we'd love your help - don't hesitate to reach out!
+
+
+[Discuss](https://news.ycombinator.com/item?id=28375398) on HN.
