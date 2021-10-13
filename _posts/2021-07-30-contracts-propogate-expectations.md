@@ -130,7 +130,6 @@ Sometimes, we don't want to propagate requirements, and that's fine too.
 This comes back to a point that Marko made today - all these testing
 approaches (unit tests, property-based tests, contract) are **complementary**.
 
-I'll share the talk recording when it becomes public! And if you're already a
-[EuroPython](https://ep2021.europython.eu/)
-conference ticket holder, you can watch the recording
-[now](https://ep2021.europython.eu/setup/conference-youtube-links/).
+UPDATE 2021-10-12: The talk recording has been released!
+You can jump to the CrossHair part
+[here](https://youtu.be/ynRdJR5UQWY?t=1428)!
