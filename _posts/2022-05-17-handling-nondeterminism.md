@@ -4,8 +4,10 @@ title:  "Handling Nondeterminism"
 
 ---
 
-Hail, friends-of-rigor! CrossHair v0.0.23 was released today with a
-important new capability for dealing with nondeterministic behavior.
+Hail, friends-of-rigor!
+
+CrossHair v0.0.23 was released today with an important new capability for
+dealing with nondeterministic behavior.
 Let's get into it.
 
 ## Handling Nondeterminism
@@ -20,7 +22,7 @@ Here are some common things that cause nondeterminism:
  * Code that reads data from the disk or network.
 
 As you might imagine, it's very common to use functions like these.
-But now, with the work that [Loïc Montandon](https://github.com/lmontand) just integrated,
+Now, with the work that [Loïc Montandon](https://github.com/lmontand) just integrated,
 we have ways to check properties even when nondeterministic behavior exists.
 
 By identifing the core functions that contain the nondeterminism, we can
@@ -42,8 +44,12 @@ You can read more about this capability in the updated
   of nondeterminism (`time.time`, `random`, etc) using Loïc's work.
   You can follow that effort
   [in this issue](https://github.com/pschanely/CrossHair/issues/162).
-* Independently, I'm making some progress refactoring hypothesis to better support the
-  CrossHair integration. Importantly, this will give us access to a large number of
-  properties to test CrossHair. And perhaps start a bug trophy list? You
-  can follow that work
+* Separately, I'm making some progress refactoring hypothesis to
+  better support the CrossHair integration.
+  Importantly, this will give us access to a large number of
+  properties to test CrossHair.
+  And perhaps start a bug trophy list!
+  You can follow this effort
   [here](https://github.com/HypothesisWorks/hypothesis/issues/3086).
+
+As always, thanks for taking some time to share this journey with me. - Phil
