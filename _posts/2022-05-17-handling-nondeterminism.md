@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Handling Nondeterminism"
+title:  "Handling Nondeterminism in CrossHair"
 
 ---
 
