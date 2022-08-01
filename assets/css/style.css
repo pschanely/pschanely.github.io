@@ -207,9 +207,12 @@ pre code {
 
 
 
+html {
+    background-color: #e6e6e6
+}
 body {
     color: #211f1d;
-    background: #e6e6e6;
+    /* background: #e6e6e6; */
 }
 h1, h2, h3, h4, h5, h6 {
     color: #161616;
@@ -232,9 +235,12 @@ pre, code {
 }
 
 @media screen and (prefers-color-scheme: dark) {
+    html {
+        background-color: #252525
+    }
     body {
         color: #f0e7d5;
-        background: #252525;
+        /* background: #252525; */
     }
     h1, h2, h3, h4, h5, h6 {
         color: #e8e8e8;
