@@ -4,8 +4,6 @@ title:  "Handling Nondeterminism in CrossHair"
 
 ---
 
-Hail, friends-of-rigor!
-
 CrossHair v0.0.23 was released today with an important new capability for
 dealing with nondeterministic behavior.
 Let's get into it.
